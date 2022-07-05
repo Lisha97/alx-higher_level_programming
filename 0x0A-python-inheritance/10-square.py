@@ -1,18 +1,18 @@
 #!/usr/bin/python3
+"""
+This module implements a Square object
+"""
 
-"""Inherits from subclass - square"""
+
 Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    """A class representation of a square"""
-
+    """implementation
+    """
     def __init__(self, size):
-        """Initializes a square
-        Validate the size of square
-        then; reinitialize the size
+        """initialization
+        Args:
+            size (int): size
         """
-        self.__size = size
-        self.integer_validator("size", size)
         super().__init__(size, size)
-        self._size = 
